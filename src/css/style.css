@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
   margin: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#d7eaff), to(#00d4ff));
+  background: linear-gradient(to right, #d7eaff, #00d4ff);
 }
 body header {
   height: 10%;
