@@ -4,21 +4,21 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#d7eaff), to(#00d4ff));
   background: linear-gradient(to right, #d7eaff, #00d4ff);
 }
-body header {
+body .header {
   height: 10%;
   background-color: cornflowerblue;
 }
-body header div {
+body .header div {
   padding: 0 50px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-body header div img {
+body .header div img {
   width: 10%;
 }
-body header div .town {
+body .header div .town {
   width: 35%;
   height: 33%;
   text-align: center;
@@ -27,7 +27,7 @@ body header div .town {
   border-radius: 15px;
   border: none;
 }
-body header div .unité {
+body .header div .unité {
   width: 5%;
   height: 33%;
   font-size: large;
@@ -51,8 +51,8 @@ body main {
           flex-direction: column;
 }
 body #meteo-curr {
+  width: 50%;
   margin-top: 30px;
-  width: 30%;
   background-color: skyblue;
   border-radius: 15px;
 }
@@ -104,7 +104,7 @@ body #meteo-curr .cityTemp .temps p {
   margin: 0;
 }
 body #meteo-jour {
-  width: 30%;
+  width: 50%;
   margin-top: 30px;
   background-color: white;
   border-radius: 15px;
@@ -143,4 +143,64 @@ body #meteo-jour ul .Tressenti .Tressenti-index {
 body #meteo-jour ul .meteo {
   border-top: 1px solid #dedede;
   padding: 10px 16px;
+}
+body #meteo-week {
+  width: 50%;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+body #meteo-week .meteo-week {
+  padding: 16px;
+}
+body #meteo-week .error {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+body #meteo-week .prevision-quotidienne ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+body #meteo-week .prevision-quotidienne ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  padding: 0 5px;
+  -o-border-image: linear-gradient(180deg, hsla(0deg, 0%, 87.1%, 0) 0, #dedede 25%, #dedede 70%, hsla(0deg, 0%, 87.1%, 0) 85%, hsla(0deg, 0%, 87.1%, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, hsla(0deg, 0%, 87.1%, 0)), color-stop(25%, #dedede), color-stop(70%, #dedede), color-stop(85%, hsla(0deg, 0%, 87.1%, 0)), to(hsla(0deg, 0%, 87.1%, 0))) 1 100%;
+     border-image: linear-gradient(180deg, hsla(0deg, 0%, 87.1%, 0) 0, #dedede 25%, #dedede 70%, hsla(0deg, 0%, 87.1%, 0) 85%, hsla(0deg, 0%, 87.1%, 0)) 1 100%;
+}
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-ajd-min {
+  font-size: 12px;
+}
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-demain-min {
+  font-size: 12px;
+}
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-apdem-min {
+  font-size: 12px;
+}
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-3jours-min {
+  font-size: 12px;
+}
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-4jours-min {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

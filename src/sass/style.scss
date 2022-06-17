@@ -2,7 +2,7 @@ body {
     margin: 0;
     background: linear-gradient(to right, #d7eaff, #00d4ff);
 
-    header {
+    .header {
         height: 10%;
         ;
         background-color: cornflowerblue;
@@ -46,15 +46,17 @@ body {
     }
 
     #meteo-curr {
+        width: 50%;
         margin-top: 30px;
-        width: 30%;
         background-color: skyblue;
         border-radius: 15px;
+
         .error {
             color: red;
             text-align: center;
             text-decoration: underline;
         }
+
         .cityName {
             width: 100%;
             font-size: 1.5em;
@@ -66,7 +68,7 @@ body {
                 border-top-right-radius: 15px;
                 margin: 0;
                 padding-left: 10px;
-                color: #fff;    
+                color: #fff;
                 background-color: cornflowerblue;
                 ;
             }
@@ -77,10 +79,11 @@ body {
             flex-direction: row-reverse;
             justify-content: space-between;
             padding: 10px 16px;
-            
+
             .icon {
                 text-align: right;
-                img{
+
+                img {
                     width: 70px;
                 }
             }
@@ -88,7 +91,8 @@ body {
             .temps {
                 text-align: left;
                 border: none;
-                p{
+
+                p {
                     color: #fff;
                     font-size: 32px;
                     margin: 0;
@@ -97,39 +101,100 @@ body {
         }
     }
 
-    #meteo-jour{
-        width:30%;
+    #meteo-jour {
+        width: 50%;
         margin-top: 30px;
         background-color: #ffff;
         border-radius: 15px;
+
         .error {
             color: red;
             text-align: center;
             text-decoration: underline;
         }
-        ul{
+
+        ul {
             margin: 0;
             padding: 0;
-            li{
+
+            li {
                 list-style: none;
             }
-            .location{
+
+            .location {
                 padding: 16px;
             }
-            .Tressenti{
+
+            .Tressenti {
                 display: flex;
                 flex-direction: column;
                 margin: 0 16px;
-                .Tressenti-temp{
+
+                .Tressenti-temp {
                     font-size: 32px;
                 }
-                .Tressenti-index{
+
+                .Tressenti-index {
                     font-size: 12px;
                 }
             }
-            .meteo{
+
+            .meteo {
                 border-top: 1px solid #dedede;
-            padding: 10px 16px;            }
+                padding: 10px 16px;
+            }
         }
+    }
+
+    #meteo-week {
+        width: 50%;
+        margin-top: 30px;
+        background-color: #ffff;
+        border-radius: 15px;
+        .meteo-week{
+            padding: 16px;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .prevision-quotidienne {
+            ul {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    flex-basis: 20%;
+                    flex-direction: column;
+                    list-style: none;
+                    border-style: solid;
+                    border-width: 0 1px 0 0;
+                    padding: 0 5px;
+                    border-image: linear-gradient(180deg, hsla(0, 0%, 87.1%, 0) 0, #dedede 25%, #dedede 70%, hsla(0, 0%, 87.1%, 0) 85%, hsla(0, 0%, 87.1%, 0)) 1 100%;
+                    .prevision-quotidienne-ajd-min{
+                        font-size: 12px;
+                    }
+                    .prevision-quotidienne-demain-min{
+                        font-size: 12px;
+                    }
+                    .prevision-quotidienne-apdem-min{
+                        font-size: 12px;
+                    }
+                    .prevision-quotidienne-3jours-min{
+                        font-size: 12px;
+                    }
+                    .prevision-quotidienne-4jours-min{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
     }
 }
