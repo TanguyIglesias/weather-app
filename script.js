@@ -61,9 +61,9 @@ document.querySelector('#input-town').addEventListener('keyup', (e) => {
                     document.querySelector('#meteo-curr').innerHTML = error;
                 }
                 else {
-                    let prevision = `<header class="meteo-week"><h2>Prévision quotidienne</h2></header>`
-                    prevision +=
-                        `<div class="prevision-quotidienne">
+                    let prevision = 
+                    `<header class="meteo-week"><h2>Prévision quotidienne</h2></header>
+                        <div class="prevision-quotidienne">
                             <ul class="prevision-quotidienne-list">
                                 <li><h3>Ajd</h3>
                                     <div class="prevision-quotidienne-ajd-max">${Math.floor(Math.round(data.list[0].main.temp_max))}°</div>
