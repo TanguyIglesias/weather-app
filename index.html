@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,15 @@
     <script defer src="script.js"></script>
     <title>Weather App</title>
 </head>
+
 <body>
     <header class="header">
         <div>
             <img src="src/images/03_iday.svg" alt="Logo Soleil">
-            <input id="input-town" type="text" class="town" placeholder="Recherche de ville">
-            <select class="unité">
-                <option value="celcius">°C</option>
-                <option value="fahrenheit">°F</option>
-            </select>
-            <h4></h4>
+            <div class="submit">
+                <input id="input-town" type="text" class="town" placeholder="Recherche de ville">
+                <button id="button-town" class="button-town">Rechercher</button>
+            </div>
         </div>
     </header>
     <main>
@@ -28,5 +28,16 @@
         </section>
         <section id="meteo-week">
         </section>
+        <section id="meteo-comparaison">
+            <div class="submit2">
+            <input id="input-town2" type="text" class="town" placeholder="Seconde ville pour comparaison">
+            <button id="button-town2" class="button-town2">Rechercher</button>
+        </div>
+            <div class="comparaison">
+                <div id="table-city1"></div>
+                <div id="table-city2"></div>
+            </div>
+        </section>
 </body>
+
 </html>

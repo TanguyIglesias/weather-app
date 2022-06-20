@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   background: -webkit-gradient(linear, left top, right top, from(#d7eaff), to(#00d4ff));
@@ -9,30 +8,58 @@ body .header {
   background-color: cornflowerblue;
 }
 body .header div {
-  padding: 0 50px;
-  height: 100%;
+  margin: 0 auto;
+  padding: 11px 11px 11px 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 body .header div img {
   width: 10%;
 }
-body .header div .town {
-  width: 35%;
-  height: 33%;
+body .header div .submit {
+  margin: auto 36% auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .header div .submit .town {
+  margin: 10px;
   text-align: center;
   font-size: 1.5em;
-  margin: auto;
   border-radius: 15px;
   border: none;
 }
-body .header div .unité {
-  width: 5%;
-  height: 33%;
-  font-size: large;
+body .header div .submit .button-town {
   text-align: center;
-  margin: auto 0;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+body .header div .submit .button-town:hover {
+  background-color: grey;
+  color: #fff;
+}
+body .header div .submit .button-town:active {
+  background-color: grey;
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 body main {
   height: 90%;
@@ -203,4 +230,92 @@ body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-3jours-min 
 }
 body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-4jours-min {
   font-size: 12px;
+}
+body #meteo-comparaison {
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+body #meteo-comparaison .submit2 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body #meteo-comparaison .submit2 .town {
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 15px;
+  border: none;
+}
+body #meteo-comparaison .submit2 .button-town2 {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+body #meteo-comparaison .submit2 .button-town2:hover {
+  background-color: grey;
+  color: #fff;
+}
+body #meteo-comparaison .submit2 .button-town2:active {
+  background-color: grey;
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+body #meteo-comparaison .town {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+}
+body #meteo-comparaison .comparaison {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+body #meteo-comparaison .comparaison #table-city1 table {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+body #meteo-comparaison .comparaison #table-city1 table h4 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 auto 10px;
+}
+body #meteo-comparaison .comparaison #table-city2 table {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+body #meteo-comparaison .comparaison #table-city2 table h4 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 auto 10px;
 }/*# sourceMappingURL=style.css.map */
